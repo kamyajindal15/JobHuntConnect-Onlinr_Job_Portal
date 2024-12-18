@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Company</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .view_company {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+        }
+    
+        .heading {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px; 
+        }
+    
+        .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .info img {
+            max-width: 100px;
+            margin: 0 auto;
+            display: block;
+            padding-bottom: 15px;
+        }
+    
+        .info h3, .description h3 {
+            color: #29b9b4;
+            margin-bottom: 10px;
+            font-size: 22px; 
+        }
+    
+        .info p, .description p, .details ul li {
+            text-align: center;
+            line-height: 1.6;
+            font-size: 18px; 
+        }
+    
+        .details ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .details ul li {
+            margin: 5px 0;
+            font-size: 18px; 
+        }
+    
+        .description {
+            margin-top: 20px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>JobHuntConnect</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">All Jobs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Account</a>
+            </nav>
+
+
+            <a href="#" class="btn" style="margin-top:0;">Post Job</a>
+        </section>
+    </header>
+
+
+
+
+
+    <section class="view_company">
+        <h1 class="heading">Company Details</h1>
+        <div class="details">
+            <div class="info">
+                <img src="./logo.png" alt="">
+                <h3>IT Infosys co.</h3>
+                <p><i class="fas fa-map-marker-alt"></i>Mumbai, India</p>
+            </div>
+
+
+            <div class="description">
+                <h3>About Company</h3>
+                <p>We are a dynamic and innovative company committed to driving excellence in [industry/sector]. With a passion for [core mission or values], our dedicated team works tirelessly to deliver cutting-edge solutions and unparalleled services. Our company thrives on a culture of collaboration, fostering an environment where creativity and ingenuity flourish.
+                </p>
+                <p>At the heart of our success is a relentless commitment to [specific goals or outcomes], combined with a forward-thinking approach that adapts to the ever-evolving landscape of [industry]. As we continue to grow, we remain steadfast in our dedication to [customer satisfaction/client success], ensuring that our impact extends far beyond the conventional boundaries. Join us on our journey as we redefine standards and make a lasting impact in [industry/sector].</p>
+            </div>
+
+            <ul>
+                <li>Established on 21-05-2005</li>
+                <li>253 working employees</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="jobs-container">
+        <h1 class="heading">Jobs They Offer</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="company">
+                    <img src="./icon1.png" alt="">
+                    <div>
+                        <h3>IT Infosys co.</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+
+                <h3 class="job-title">Senior Web Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 25k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Part-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>Day-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./icon2.png" alt="">
+                    <div>
+                        <h3>IT Infosys co.</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+
+                <h3 class="job-title">Qualified Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>9000</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>Day-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+                    <img src="./icon3.png" alt="">
+                    <div>
+                        <h3>IT Infosys co.</h3>
+                        <p>Posted Today</p>
+                    </div>
+                </div>
+                <h3 class="job-title">JavaScript Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>15k - 25k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Internship</span></p>
+                    <p><i class="fas fa-clock"></i><span>Night-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>

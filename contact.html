@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .contact {
+            padding: 50px 20px;
+            background-color: #fff;
+            margin: 50px auto;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            flex: 1;
+            text-align: center;
+            padding:20px;
+            background:#f7f7f7;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .box i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #29b9b4;
+
+        }
+
+        .box a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom:20px;
+        }
+
+        .box p {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .input:focus {
+            outline: none;
+            border-color: #29b9b4;
+        }
+        .btn {
+            background-color: #29b9b4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #29b9b4;
+        }
+
+        .credit {
+            text-align: left;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .credit span {
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>JobHuntConnect</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">All Jobs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Account</a>
+            </nav>
+
+
+            <a href="#" class="btn" style="margin-top:0;">Post Job</a>
+        </section>
+    </header>
+
+
+
+
+
+    <div class="section-title">Contact us</div>
+
+    <section class="contact">
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <a href="tel:1234567890">8198000993</a>
+                <a href="tel:1112223333">9876600938</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:dixita@gmail.com">kamyajindal15@gmail.com</a>
+                <a href="mailto:bansaldixita@gmail.com">jindalkamya15@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="#">Nagran Chowk, Nabha-147201</a>
+            </div>
+
+
+        </div>
+
+
+
+        <form action="" method="post">
+            <h3>Drop your message here</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>Name <span>*</span></p>
+                    <input type="text" name="name" required maxlength="20" placeholder="Enter" class="input">
+                </div>
+
+                <div class="box">
+                    <p>Email <span>*</span></p>
+                    <input type="email" name="email" required maxlength="50" placeholder="Enter"
+                        class="input">
+                </div>
+
+                <div class="box">
+                    <p>Number <span>*</span></p>
+                    <input type="number" name="number" required min="0" max="9999999999" maxlength="20"
+                        placeholder="Enter" class="input">
+                </div>
+
+                <div class="box">
+                    <p>Role <span>*</span></p>
+                    <select name="role" required class="input">
+                        <option value="employee">Employee</option>
+                        <option value="employeer">Employer</option>
+                    </select>
+                </div>
+            </div>
+            <p>Message <span>*</span></p>
+
+            <textarea name="message" class="input" required maxlength="1000" placeholder="Enter" cols="30"
+                rows="10"></textarea>
+
+            <input type="submit" value="send message" name="send" class="btn">
+        </form>
+    </section>
+
+        <div class="credit">
+            &copy; copyright @ 2024 by <span> Kamya Jindal </span> | all rights reserved!
+        </div>
+
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

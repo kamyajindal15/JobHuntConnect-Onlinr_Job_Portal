@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+            font-size:16px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="phonenumber"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #29b9b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000605;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: calc(100% - 22px);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .login-section {
+            text-align: center;
+            margin-top: 20px;
+            font-size:16px;
+        }
+
+        .login-section a {
+            color: #007bff;
+            text-decoration: none;
+            font-size:16px;
+        }
+        .login-section a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="section-title">User Registration</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="" method="post" id="registrationForm">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="number">Contact:</label>
+            <input type="phonenumber" id="number" name="number" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="employer">Employer</option>
+                <option value="jobseeker">Job Seeker</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Register" id="registerButton">
+    </form>
+
+    <div class="login-section">
+        <p>Already a user? <a href="login.html"><b><i>Sign In</i></b></a></p>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            alert("Registered Successfully");
+        });
+    </script>
+</body>
+</html>

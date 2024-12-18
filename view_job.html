@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Job</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .job-details {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 70%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+      
+        .details {
+            margin-top: 20px;
+        }
+
+        .job-info h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #29b9b4;
+        }
+
+        .job-info a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .basic-details {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .basic-details h3 {
+            font-size: 20px;
+            color: #29b9b4;
+            margin-bottom: 10px;
+        }
+
+        .basic-details p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul h3 {
+            font-size: 20px;
+            color: #29b9b4;
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .description {
+            margin-top: 20px;
+        }
+
+        .description h3 {
+            font-size: 20px;
+            color: #29b9b4;
+            margin-bottom: 10px;
+        }
+
+        .description p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .description ul {
+            padding-left: 20px;
+        }
+        .description li{
+            padding-left: 0px;
+        }
+        .flex-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #29b9b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #29b9b4;
+        }
+
+        .save {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #29b9b4;
+            display: flex;
+            align-items: center;
+        }
+
+        .save span {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>JobHuntConnect</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">All Jobs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Account</a>
+            </nav>
+
+
+            <a href="#" class="btn" style="margin-top:0;">Post Job</a>
+        </section>
+    </header>
+
+
+
+    <section class="job-details">
+        <h1 class="section-title">Job Details</h1>
+
+        <div class="details">
+            <div class="job-info">
+                <h3>Senior Web Designer</h3>
+                <a href="view_company.html">IT Infosys co.</a>
+                <p><i class="fas fa-map-marker-alt"></i>Mumbai, India</p>
+            </div>
+            <div class="basic-details">
+                <h3>Salary</h3>
+                <p>10k - 25k per month</p>
+                <h3>Benefits</h3>
+                <p>Work From Home, Health Insurance</p>
+                <h3>Job Type</h3>
+                <p>Part-Time</p>
+                <h3>Schedule</h3>
+                <p>Day Shift</p>
+            </div>
+
+            <ul>
+                <h3>Requirements</h3>
+                <li>Education: <span>Graduate</span></li>
+                <li>Age: <span>22+</span></li>
+                <li>Language: <span>Hindi, English</span></li>
+                <li>Experience: <span>2+ years</span></li>
+            </ul>
+
+            <ul>
+                <h3>Qualifications</h3>
+                <li>Bachelor's (Preferred)</li>
+                <li>PHP : 1 year (Preferred)</li>
+                <li>Web Design : 1 year (Preferred)</li>
+                <li>WordPress : 1 year (Preferred)</li>
+                <li>Total Work : 2 years (Required)</li>
+            </ul>
+
+            <ul>
+                <h3>Skills</h3>
+                <li>HTML5 and CSS3</li>
+                <li>JavaScript</li>
+                <li>node.js</li>
+                <li>react.js</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+
+            <div class="description">
+                <h3>Job Description</h3>
+                <p>Seeking an experienced Senior Web Designer to lead our creative team. Responsible for producing visually stunning designs for our website, collaborating with cross-functional teams, and staying updated on design trends. Mentor junior designers, manage multiple projects, and ensure a seamless user experience. Join us in shaping a compelling digital presence!</p>
+            <br><br><ul>
+                <li>Hiring 2 candidates for this role</li>
+                <li>Posted 2 days ago</li>
+            </ul>
+            </div>
+
+            <form action="" method="post" class="flex-btn">
+                <input type="submit" value="apply now" name="apply" class="btn">
+                <button type="submit" class="save"><i class="far fa-heart"></i><span>Save Job</span></button>
+            </form>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

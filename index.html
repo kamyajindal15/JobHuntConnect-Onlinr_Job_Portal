@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>JobHuntConnect</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">All Jobs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="register.html">Account</a>
+            </nav>
+
+
+            <a href="#" class="btn" style="margin-top:0;">Post Job</a>
+        </section>
+    </header>
+
+
+
+
+    <div class="home-container">
+        <section class="home">
+            <form action="jobs.html" method="get">
+                <h3>Find Your Next Job</h3>
+                <p>Job Title <span>*</span></p>
+                <input type="text" name="title" placeholder="Keyword, Category or Company" required maxlength="20"
+                    class="input">
+                <p>Job Location</p>
+                <input type="text" name="location" placeholder="City, State or Country" required maxlength="50"
+                    class="input">
+                <input type="submit" value="search job" name="search" class="btn">
+            </form>
+            
+        </section>
+    </div>
+
+
+
+    <section class="category">
+        <h1 class="heading">Job Categories</h1>
+
+        <div class="box-container">
+            <a href="#" class="box">
+                <i class="fas fa-code"></i>
+                <div>
+                    <h3>Development</h3>
+                    <span>2200 jobs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fas fa-pen"></i>
+                <div>
+                    <h3>Designer</h3>
+                    <span>500 jobs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fas fa-chalkboard-user"></i>
+                <div>
+                    <h3>Teacher</h3>
+                    <span>1500 jobs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fas fa-bullhorn"></i>
+                <div>
+                    <h3>Marketing</h3>
+                    <span>1200 jobs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fas fa-headset"></i>
+                <div>
+                    <h3>Service</h3>
+                    <span>3100 jobs</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fas fa-wrench"></i>
+                <div>
+                    <h3>Engineer</h3>
+                    <span>400 jobs</span>
+                </div>
+            </a>
+
+
+            <a href="#" class="box">
+                <i class="fas fa-hand-holding-dollar"></i>
+                <div>
+                    <h3>Finance</h3>
+                    <span>1000 jobs</span>
+                </div>
+            </a>
+
+
+            <a href="#" class="box">
+                <i class="fas fa-person-digging"></i>
+                <div>
+                    <h3>Labour</h3>
+                    <span>4000 jobs</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <section class="jobs-container">
+        <h1 class="heading">Latest Jobs</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="company">
+                    <img src="./icon1.png" alt="">
+                    <div>
+                        <h3>IT Infosys co.</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Senior Web Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 25k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Part-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>Day-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./icon2.png" alt="">
+                    <div>
+                        <h3>All Media ltd</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+
+                <h3 class="job-title">Qualified Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Hyderabad, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>9000</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>Day-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+                    <img src="./icon3.png" alt="">
+                    <div>
+                        <h3>Software Solutions</h3>
+                        <p>Posted Today</p>
+                    </div>
+                </div>
+
+                <h3 class="job-title">JavaScript Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Chandigarh, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>15k - 25k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Internship</span></p>
+                    <p><i class="fas fa-clock"></i><span>Night-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+                    <img src="./icon4.png" alt="">
+                    <div>
+                        <h3>IT world</h3>
+                        <p>19 days ago</p>
+                    </div>
+                </div>
+
+                <h3 class="job-title">Junior Front-End</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Bengaluru, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>20k - 50k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Contract</span></p>
+                    <p><i class="fas fa-clock"></i><span>Fixed-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+                    <img src="./icon5.png" alt="">
+                    <div>
+                        <h3>Info Statics</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+
+                <h3 class="job-title">Jquery Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>New Delhi, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>6000</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Temporary</span></p>
+                    <p><i class="fas fa-clock"></i><span>Day-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./icon6.png" alt="">
+                    <div>
+                        <h3>Mass Idea</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+
+                <h3 class="job-title">PHP Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Ahmedabad, India</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>30k - 1 lakh</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Fresher</span></p>
+                    <p><i class="fas fa-clock"></i><span>Day-Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">View Details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+
+
+
+            <div style="text-align:center; margin-top:2rem;margin-left:50rem;width:15rem;">
+                <a href="jobs.html" class="btn">View All</a>
+            </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <section class="grid">
+            
+        </section>
+
+
+        <div class="credit">
+            &copy; copyright @ 2024 by <span> Kamya Jindal </span> | all rights reserved!
+        </div>
+
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
